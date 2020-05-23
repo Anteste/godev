@@ -1,0 +1,109 @@
+.login {
+    text-align: center;
+    color: white;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  padding: 0 20px;
+}
+
+.contact-form{
+  display: flex;
+  max-width: 550px;
+  margin: 0 auto;
+  background: rgb(71, 71, 71);
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.input-fields{
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+.input-fields,
+.msg{
+  width: 48%;
+}
+
+.input-fields .input,
+
+.msg textarea{
+  height: 212px;
+}
+
+::-webkit-input-placeholder {
+  /* Pour les mecs moins bizarres*/
+  color: rgb(71, 71, 71);
+}
+::-moz-placeholder {
+  /* Pour les mecs bizarres */
+  color: rgb(71, 71, 71);
+}
+:-ms-input-placeholder {
+  /* Pour les vieux */
+  color: rgb(71, 71, 71);
+}
+
+.btn {
+    top: 10%;
+    text-decoration: none;
+    background: rgb(0, 204, 170);
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    border: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.btn:hover {
+    top: 10%;
+    text-decoration: none;
+    background: rgb(0, 105, 88);
+    border-radius: 20px;
+    color: #a3a3a3;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    border: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+@media screen and (max-width: 600px){
+  .contact-form{
+    flex-direction: column;
+  }
+  .msg textarea{
+    height: 80px;
+  }
+  .input-fields,
+  .msg{
+    width: 100%;
+  }
+}

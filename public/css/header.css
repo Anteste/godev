@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700&display=swap');
+body {
+    margin: 0;
+    background-color: rgb(48, 48, 48);
+    padding: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(31, 31, 31);
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 0px 20px rgb(31, 31, 31);
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+.nav-links li{
+    list-style: none;
+}
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 80px;
+    text-transform: uppercase;
+}
+.nav-links a:hover{
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 80px;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.nav-links .button {
+    text-decoration: none;
+    background: rgb(0, 196, 163);
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    border: none;
+    position: relative;
+    text-align: center;
+}
+.nav-links .button:hover {
+    text-decoration: none;
+    background: rgb(0, 105, 88);
+    border-radius: 20px;
+    color: #a3a3a3;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    border: none;
+    position: relative;
+    text-align: center;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+}
+@media screen and (max-width:1024px){
+    .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+       opacity: 0; 
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

@@ -1,0 +1,1 @@
+<p>Bonjour <strong><?= $member->get('pseudo') ?></strong> !</p>

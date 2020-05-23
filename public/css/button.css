@@ -1,0 +1,42 @@
+.button-- {
+    text-align: center;
+    position: absolute;
+    margin-top: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+.button {
+    text-decoration: none;
+    background: rgb(0, 110, 255);
+    border-radius: 50px;
+    line-height: 20px;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    border: none;
+    position: relative;
+    text-align: center;
+}
+.button:hover {
+    text-decoration: none;
+    background: rgb(0, 74, 172);
+    border-radius: 20px;
+    line-height: 20px;
+    color: #a3a3a3;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+    border: none;
+    position: relative;
+    text-align: center;
+}
+.imagediscord{
+    top: 10%;
+    position: absolute;
+}
